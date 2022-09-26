@@ -14,13 +14,6 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="mt-5">
-        <Image 
-          src={bot}
-          alt="Cheeky Tools"
-          layout="responsive"
-          width={100}
-          height={100}
-        />
         <h1 className="text-center text-2xl text-blue-500">cheeky.tools</h1>
       </main>
 
