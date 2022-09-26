@@ -11,10 +11,8 @@ export default function Header() {
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                        <div className="h-10 w-10 md:h-20 md:w-20 flex"><a href="javascript:void(0)">
-                            {/* <h2 className="text-2xl font-bold">LOGO</h2> */}
-                            <Bot />
-                        </a>
+                        <div className="h-10 w-10 md:h-20 md:w-20">
+                          <Bot />
                         </div>
                         <div className="md:hidden">
                             <button
