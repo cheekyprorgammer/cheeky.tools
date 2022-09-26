@@ -12,15 +12,15 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="">
+      <main className="mt-5">
         <h1 className="text-center text-2xl text-blue-500">cheeky.tools</h1>
       </main>
 
-      <footer className="">
+      <footer className="text-center text-xl mt-5">
           Powered by{' '}
-          <span className="">
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
+          <a href="https://github.com/cheekyprorgammer" target="_blank" rel="noopener noreferrer">
+            cheekyprogrammer
+          </a>
       </footer>
     </div>
   )
