@@ -14,7 +14,6 @@ export default function Header() {
                         <div className="h-10 w-10 md:h-20 md:w-20 flex"><a href="javascript:void(0)">
                             {/* <h2 className="text-2xl font-bold">LOGO</h2> */}
                             <Bot />
-                            cheeky
                         </a>
                         </div>
                         <div className="md:hidden">
