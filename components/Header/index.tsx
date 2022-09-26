@@ -1,18 +1,17 @@
 import { useState } from "react"
 import Bot from '../images/bot'
 
-
 export default function Header() {
   
   const [navbar, setNavbar] = useState(false)
 
     return (
-        <nav className="w-full bg-white shadow">
+        <nav className="w-full bg-gray-50 shadow">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                        <div className="h-10 w-10 md:h-20 md:w-20">
-                          <Bot />
+                        <div className="h-10 w-10 md:h-20 md:w-20 text-red-200">
+                          <Bot className="" />
                         </div>
                         <div className="md:hidden">
                             <button
@@ -58,18 +57,21 @@ export default function Header() {
                             navbar ? "block" : "hidden"
                         }`}
                     >
-                        <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+                        <ul className="items-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                             <li className="text-gray-600 hover:text-blue-600">
-                                <a href="javascript:void(0)">Home</a>
+                                Home
+                            </li>
+                            <li className="flex items-center text-gray-600 hover:text-blue-600">
+                                Tools 
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>
                             </li>
                             <li className="text-gray-600 hover:text-blue-600">
-                                <a href="javascript:void(0)">Blog</a>
+                                About US
                             </li>
                             <li className="text-gray-600 hover:text-blue-600">
-                                <a href="javascript:void(0)">About US</a>
-                            </li>
-                            <li className="text-gray-600 hover:text-blue-600">
-                                <a href="javascript:void(0)">Contact US</a>
+                                Contact US
                             </li>
                         </ul>
                     </div>
