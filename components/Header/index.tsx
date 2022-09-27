@@ -12,7 +12,7 @@ export default function Header() {
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <div className="h-10 w-10 md:h-20 md:w-20 text-red-200 cursor-pointer transform hover:scale-105 transition-all duration-500">
-                          <Link href="/"><Bot className="" /></Link>
+                          <Bot className="" />
                         </div>
                         <div className="md:hidden">
                             <button
@@ -58,7 +58,7 @@ export default function Header() {
                             navbar ? "block" : "hidden"
                         }`}
                     >
-                    <div className="text-lg md:hidden">Cheeky Tools</div>
+                    <div className="text-lg font-bold md:hidden">Cheeky Tools</div>
                         <Link href="/">
                             <div className="text-gray-600 hover:text-blue-600 hover:font-bold cursor-pointer">
                             Home
