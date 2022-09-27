@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import bot from '../public/bot.png'
 
 const Home: NextPage = () => {
   return (
@@ -12,6 +11,12 @@ const Home: NextPage = () => {
         <meta name="description" content="A bunch of web tools designed to help you live a cheeky life. Made by cheekyprogrammer." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div className="p-5">
+      <h1 className="text-3xl">Welcome to cheeky.tools</h1>
+      <p className="">Fast. Compact. Cheeky.</p>
+      <p className="mt-2">A set of tools designed to help you live a cheeky life.</p>
+      </div>
+      
 
     </div>
   )

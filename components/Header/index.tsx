@@ -6,7 +6,7 @@ export default function Header() {
   const [navbar, setNavbar] = useState(false)
 
     return (
-        <nav className="w-full bg-gray-100 shadow">
+        <nav className="w-full bg-gray-50 shadow">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -53,27 +53,22 @@ export default function Header() {
                 </div>
                 <div>
                     <div
-                        className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+                        className={`flex-1 justify-self-center pb-3 mt-2 space-y-3 md:pb-0 md:mt-0 md:flex md:space-x-6 md:space-y-0 ${
                             navbar ? "block" : "hidden"
                         }`}
                     >
-                        <ul className="items-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            <li className="text-gray-600 hover:text-blue-600 cursor-pointer">
-                                Home
-                            </li>
-                            <li className="flex items-center text-gray-600 hover:text-blue-600 cursor-pointer">
-                                Tools&nbsp;
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                </svg>
-                            </li>
-                            {/* <li className="text-gray-600 hover:text-blue-600 cursor-pointer">
-                                About US
-                            </li> */}
-                            <li className="text-gray-600 hover:text-blue-600 cursor-pointer">
-                                Contact
-                            </li>
-                        </ul>
+                    <div className="text-lg md:hidden">Cheeky Tools</div>
+                        <div className="text-gray-600 hover:text-blue-600 hover:font-bold cursor-pointer">
+                            Home
+                        </div>
+
+                        <div className="text-gray-600 hover:text-blue-600 hover:font-bold cursor-pointer">
+                            Tools
+                        </div>
+
+                        <div className="text-gray-600 hover:text-blue-600 hover:font-bold cursor-pointer">
+                            Contact
+                        </div>
                     </div>
                 </div>
             </div>
