@@ -6,11 +6,11 @@ export default function Header() {
   const [navbar, setNavbar] = useState(false)
 
     return (
-        <nav className="w-full bg-gray-50 shadow">
+        <nav className="w-full bg-gray-100 shadow">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                        <div className="h-10 w-10 md:h-20 md:w-20 text-red-200">
+                        <div className="h-10 w-10 md:h-20 md:w-20 text-red-200 cursor-pointer transform hover:scale-105 transition-all duration-500">
                           <Bot className="" />
                         </div>
                         <div className="md:hidden">
@@ -58,20 +58,20 @@ export default function Header() {
                         }`}
                     >
                         <ul className="items-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            <li className="text-gray-600 hover:text-blue-600">
+                            <li className="text-gray-600 hover:text-blue-600 cursor-pointer">
                                 Home
                             </li>
-                            <li className="flex items-center text-gray-600 hover:text-blue-600">
-                                Tools 
+                            <li className="flex items-center text-gray-600 hover:text-blue-600 cursor-pointer">
+                                Tools&nbsp;
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                                 </svg>
                             </li>
-                            <li className="text-gray-600 hover:text-blue-600">
+                            {/* <li className="text-gray-600 hover:text-blue-600 cursor-pointer">
                                 About US
-                            </li>
-                            <li className="text-gray-600 hover:text-blue-600">
-                                Contact US
+                            </li> */}
+                            <li className="text-gray-600 hover:text-blue-600 cursor-pointer">
+                                Contact
                             </li>
                         </ul>
                     </div>
