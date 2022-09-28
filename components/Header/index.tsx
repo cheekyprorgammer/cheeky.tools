@@ -11,9 +11,11 @@ export default function Header() {
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                        <div className="h-10 w-10 md:h-20 md:w-20 text-red-200 cursor-pointer transform hover:scale-105 transition-all duration-500">
-                          <Bot className="" />
-                        </div>
+                        <Link href="/">
+                            <div className="h-10 w-10 md:h-20 md:w-20 text-red-200 cursor-pointer transform hover:scale-105 transition-all duration-500">
+                            <Bot className="" />
+                            </div>
+                        </Link>
                         <div className="md:hidden">
                             <button
                                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
