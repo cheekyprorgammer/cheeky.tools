@@ -2,7 +2,6 @@ import type { NextPage } from 'next'
 import { useEffect, useState } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Image from 'next/image'
 import md5 from 'md5'
 
 const Page: NextPage = () => {
@@ -61,6 +60,12 @@ const Page: NextPage = () => {
         <title>md5 Hash Generator - cheeky.tools</title>
         <meta name="description" content="This MD5 hash generator is a hashing tool for encoding strings, personal data and other information into databases and storage." />
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="md5 Hash Generator" />
+        <meta property="og:site_name" content="cheeky.tools" />
+        <meta property="og:url" content="https://cheeky.tools/tools/md5" />
+        <meta property="og:description" content="This MD5 hash generator is a hashing tool for encoding strings, personal data and other information into databases and storage." />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://cheeky.tools/cryptography.jpg" />
       </Head>
       <div className="">
         <h1 className="text-center text-5xl font-bold underline">md5 Hash Generator</h1>
