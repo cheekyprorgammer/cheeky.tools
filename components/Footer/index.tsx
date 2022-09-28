@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="mt-10 mb-2 text-sm text-center">
             Copyright {year} by <a href="https://github.com/cheekyprorgammer" target="_blank" rel="noopener noreferrer"><span className="text-blue-500 hover:text-blue-300 hover:underline">cheekyprogrammer</span></a>.
         </div>
-        <div className="justify-center text-sm gap-3 flex">
+        <div className="justify-center text-sm gap-3 flex mb-10">
           <span className="text-blue-500 hover:text-blue-300 hover:underline"><Link href="/privacy">Privacy</Link></span>
           <span className="text-blue-500 hover:text-blue-300 hover:underline"><Link href="/contact">Contact</Link></span>
         </div>
