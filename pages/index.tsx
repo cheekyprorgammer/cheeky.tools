@@ -16,8 +16,11 @@ const Home: NextPage = () => {
         <p className="text-xl">Fast. Compact. Cheeky.</p>
         <p className="mt-5">A set of tools designed to help you live a better, and cheeky, life.</p>
         <p className="mt-5 underline font-bold">List of Tools:</p>
-        <div className="flex">
-          <p className="p-2 hover:text-blue-500 hover:scale-105"><Link href="/tools/md5">MD5 Hash Generator</Link></p>
+        <div className="flex-col">
+          <p className="p-2 hover:text-blue-500 hover:scale-105 underline"><Link href="/tools/md5">MD5 Hash Generator</Link></p>
+          <p className="p-2 hover:text-blue-500 hover:scale-105 underline"><Link href="/tools/sha1">SHA-1 Hash Generator</Link></p>
+          <p className="p-2 hover:text-blue-500 hover:scale-105 underline"><Link href="/tools/sha256">SHA-256 Hash Generator</Link></p>
+          <p className="p-2 hover:text-blue-500 hover:scale-105 underline"><Link href="/tools/sha512">SHA-512 Hash Generator</Link></p>
         </div>
       </div>
       
