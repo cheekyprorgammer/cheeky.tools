@@ -2,8 +2,25 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
+import Hash from '../components/images/hash'
+import TextTools from '../components/Tools/Text'
+import { useEffect } from 'react'
 
 const Home: NextPage = () => {
+  const colours = []
+
+  function randomColours() {
+    for (let index = 0; index < 6; index++) {
+      var randomColour = Math.floor(Math.random()*16777215).toString(16);
+      colours[index] = randomColour
+      document.getElementById("c" + index)!.style.color = "#" + randomColour
+    }
+  }
+
+  useEffect(() => {
+    randomColours()
+  }, [])
+
   return (
     <div className="">
       <Head>
@@ -12,17 +29,24 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="">
-        <h1 className="text-4xl font-bold underline">Welcome to cheeky.tools</h1>
-        <p className="text-xl">Fast. Compact. Cheeky.</p>
-        <p className="mt-5">A set of tools designed to help you live a better, and cheeky, life.</p>
-        <p className="mt-5 underline font-bold">List of Tools:</p>
-        <div className="flex-col">
-          <p className="mt-5 underline font-bold">Hashing Tools:</p>
-          <p className="p-2 hover:text-blue-500 hover:scale-105 underline"><Link href="/tools/hashing/md5">MD5 Hash Generator</Link></p>
-          <p className="p-2 hover:text-blue-500 hover:scale-105 underline"><Link href="/tools/hashing/sha1">SHA-1 Hash Generator</Link></p>
-          <p className="p-2 hover:text-blue-500 hover:scale-105 underline"><Link href="/tools/hashing/sha256">SHA-256 Hash Generator</Link></p>
-          <p className="p-2 hover:text-blue-500 hover:scale-105 underline"><Link href="/tools/hashing/sha512">SHA-512 Hash Generator</Link></p>
+        <div className="flex">
+          <h1 className="text-4xl font-bold underline">Welcome to&nbsp;
+          <span onClick={randomColours}>
+            <span id="c0">c</span>
+            <span id="c1">h</span>
+            <span id="c2">e</span>
+            <span id="c3">e</span>
+            <span id="c4">k</span>
+            <span id="c5">y</span>
+          </span>
+          &nbsp;tools
+          </h1>
         </div>
+        <p className="text-xl">Fast. Compact. Cheeky.</p>
+    
+        <TextTools />
+
+
       </div>
       
 
