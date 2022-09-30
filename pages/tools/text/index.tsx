@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import TextTools from '../../../components/Tools/Text'
+import TextTools from '../../../components/Tools/Listings/Text'
 import BackHome from '../../../components/BackHome'
 
 const Home: NextPage = () => {

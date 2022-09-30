@@ -1,12 +1,12 @@
 import Link from "next/link"
-import Hash from "../../images/hash"
-import WordCount from "../../images/wordcount"
+import Hash from "../../../images/hash"
+import WordCount from "../../../images/wordcount"
 
 export default function TextTools() {
     return (
       <div className="flex-col">
       <p className="mt-5 underline font-bold">Text/Word Tools:</p>
-      <p className="text-sm mb-5">A wide range of various text and word tools all in one place. Generate hashes, get word counts and more.</p>
+      <p className="text-sm mb-2">A wide range of various text and word tools all in one place. Generate hashes, get word counts and more.</p>
 
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 place-items-center">
 
@@ -15,7 +15,7 @@ export default function TextTools() {
             <div className="p-1 mb-2 underline w-20 text-red-600 border rounded shadow">
               <Hash />
             </div>
-            <p className="text-sm font-medium  drop-shadow-md shadow-blue-600/50 text-center">MD5 Generator</p>
+            <p className="text-sm font-medium  drop-shadow-md shadow-blue-600/50 text-center">MD5<br />Generator</p>
           </div>
         </Link>
 
@@ -24,7 +24,7 @@ export default function TextTools() {
             <div className="p-1 mb-2 underline w-20 text-red-600 border rounded shadow">
               <Hash />
             </div>
-            <p className="text-sm font-medium  drop-shadow-md shadow-blue-600/50 text-center">SHA-1 Generator</p>
+            <p className="text-sm font-medium  drop-shadow-md shadow-blue-600/50 text-center">SHA-1<br />Generator</p>
           </div>
         </Link>
 
@@ -51,7 +51,7 @@ export default function TextTools() {
             <div className="p-1 mb-2 underline w-20 border rounded shadow">
               <WordCount />
             </div>
-            <p className="text-sm font-medium  drop-shadow-md shadow-blue-600/50 text-center">Word Counter</p>
+            <p className="text-sm font-medium  drop-shadow-md shadow-blue-600/50 text-center">Word<br />Counter</p>
           </div>
         </Link>
 

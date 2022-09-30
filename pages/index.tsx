@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import TextTools from '../components/Tools/Text'
+import TextTools from '../components/Tools/Listings/Text'
 
 const Home: NextPage = () => {
   const colours = []
@@ -42,11 +42,10 @@ const Home: NextPage = () => {
         <p className="text-xl">Fast. Compact. Cheeky.</p>
     
         <TextTools />
+        <TextTools />
 
 
       </div>
-      
-
     </div>
   )
 }
