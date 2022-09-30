@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 
-export default function sha512() {
+export default function Sha512() {
     const [inputString, setInputString] = useState("")
     const [copy, setCopy] = useState(false)
   

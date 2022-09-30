@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 
-export default function wordcount() {
+export default function WordCount() {
   const [inputString, setInputString] = useState("")
   // const [copy, setCopy] = useState(false)
 

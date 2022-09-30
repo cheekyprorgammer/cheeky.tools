@@ -3,7 +3,7 @@ import Link from "next/link"
 import md5hash from "md5"
 import Head from "next/head"
 
-export default function md5() {
+export default function Md5() {
     const [inputString, setInputString] = useState("")
     const [copy, setCopy] = useState(false)
   
