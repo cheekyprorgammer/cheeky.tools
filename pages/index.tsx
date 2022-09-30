@@ -42,7 +42,6 @@ const Home: NextPage = () => {
         <p className="text-xl">Fast. Compact. Cheeky.</p>
     
         <TextTools />
-        <TextTools />
 
 
       </div>
