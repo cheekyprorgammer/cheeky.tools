@@ -16,7 +16,7 @@ export default function Header() {
                                 <Bot className="h-10 w-10 md:h-20 md:w-20 mx-auto" />
                             </div>
                         </Link>
-                        <p className="text-xl font-bold text-center drop-shadow">cheeky.tools</p>
+                        <p className="text-xl font-bold text-center drop-shadow"><Link href="/">cheeky.tools</Link></p>
                         <div className="md:hidden">
                             <button
                                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"

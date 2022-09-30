@@ -1,10 +1,7 @@
+import { useEffect } from 'react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Link from 'next/link'
-import Image from 'next/image'
-import Hash from '../components/images/hash'
 import TextTools from '../components/Tools/Text'
-import { useEffect } from 'react'
 
 const Home: NextPage = () => {
   const colours = []
