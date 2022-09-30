@@ -19,7 +19,7 @@ const Home: NextPage = () => {
   }, [])
 
   return (
-    <div className="">
+    <div className="cursor-default">
       <Head>
         <title>Cheeky Tools</title>
         <meta name="description" content="A bunch of web tools designed to help you live a cheeky life. Made by cheekyprogrammer." />
@@ -28,7 +28,7 @@ const Home: NextPage = () => {
       <div className="">
         <div className="flex">
           <h1 className="text-4xl font-bold underline">Welcome to&nbsp;
-          <span onClick={randomColours}>
+          <span onClick={randomColours} className="cursor-pointer">
             <span id="c0">c</span>
             <span id="c1">h</span>
             <span id="c2">e</span>
