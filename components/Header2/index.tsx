@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Bot from '../images/bot'
 import Link from "next/link";
 
@@ -6,10 +6,15 @@ export default function Header() {
   
   const [navbar, setNavbar] = useState(false)
 
+  useEffect(() => {
+    {console.log(document.getElementById("head")?.style.height + " px")}
+  }, [])
+
     return (
-        <nav className="sticky top-0 w-full bg-gray-50 shadow z-[100]">
+        <nav id="head" className="sticky top-0 w-full md:h-36 bg-gray-50 shadow z-[100]">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
+                    
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <Link href="/">
                             <div className="cursor-pointer transform hover:scale-105 transition-all duration-500">
