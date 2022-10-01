@@ -14,7 +14,7 @@ export default function InputString(props: any) {
     return (
         <div className="my-3">  
         <div className="flex justify-between">
-            <label htmlFor="message" className="block text-sm font-medium text-gray-900 dark:text-gray-400">Input String</label>
+            <label htmlFor="message" className="block text-sm font-medium text-gray-900 dark:text-gray-400">{props.title || "Input String"}</label>
             
             <div className="flex gap-2">
                 <div onClick={pasteText} className="cursor-pointer">

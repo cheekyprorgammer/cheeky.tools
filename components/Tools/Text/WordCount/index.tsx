@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
+import InputString from '../../../InputString'
 import ToolDisclaimer from '../../../ToolDisclaimer'
 
 export default function WordCount() {
@@ -50,7 +51,6 @@ export default function WordCount() {
     }
 
     const results = document.getElementById("results")
-
     setLoading(true)
 
     let words = inputString.split(/\S+/).length - 1
@@ -98,33 +98,20 @@ export default function WordCount() {
         <h1 className="text-center text-lg font-bold underline">Word Counter</h1>
         <p className='mt-5 text-sm text-center'>This tool counts the number of words given. Other text tools can be found <Link href="/tools/text"><span className="text-blue-500 hover:text-blue-200 cursor-pointer">here</span></Link>.</p>
       </div>
-      <div className="my-3">  
-        <div className="flex justify-between">
-          <label htmlFor="message" className="block text-sm font-medium text-gray-900 dark:text-gray-400">Input</label>
-          
-          <div className="flex gap-2">
-            <div onClick={pasteText} className="cursor-pointer">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
-                <path fillRule="evenodd" d="M15.988 3.012A2.25 2.25 0 0118 5.25v6.5A2.25 2.25 0 0115.75 14H13.5V7A2.5 2.5 0 0011 4.5H8.128a2.252 2.252 0 011.884-1.488A2.25 2.25 0 0112.25 1h1.5a2.25 2.25 0 012.238 2.012zM11.5 3.25a.75.75 0 01.75-.75h1.5a.75.75 0 01.75.75v.25h-3v-.25z" clipRule="evenodd" />
-                <path fillRule="evenodd" d="M2 7a1 1 0 011-1h8a1 1 0 011 1v10a1 1 0 01-1 1H3a1 1 0 01-1-1V7zm2 3.25a.75.75 0 01.75-.75h4.5a.75.75 0 010 1.5h-4.5a.75.75 0 01-.75-.75zm0 3.5a.75.75 0 01.75-.75h4.5a.75.75 0 010 1.5h-4.5a.75.75 0 01-.75-.75z" clipRule="evenodd" />
-              </svg>
-            </div>
 
-            <div onClick={() => {setInputString(''); document.getElementById("results")!.style.display = "none";}} className={`text-red-500 ${inputString.length > 0 ? 'block' : 'hidden'} cursor-pointer`}>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
-                <path fillRule="evenodd" d="M8.75 1A2.75 2.75 0 006 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 10.23 1.482l.149-.022.841 10.518A2.75 2.75 0 007.596 19h4.807a2.75 2.75 0 002.742-2.53l.841-10.52.149.023a.75.75 0 00.23-1.482A41.03 41.03 0 0014 4.193V3.75A2.75 2.75 0 0011.25 1h-2.5zM10 4c.84 0 1.673.025 2.5.075V3.75c0-.69-.56-1.25-1.25-1.25h-2.5c-.69 0-1.25.56-1.25 1.25v.325C8.327 4.025 9.16 4 10 4zM8.58 7.72a.75.75 0 00-1.5.06l.3 7.5a.75.75 0 101.5-.06l-.3-7.5zm4.34.06a.75.75 0 10-1.5-.06l-.3 7.5a.75.75 0 101.5.06l.3-7.5z" clipRule="evenodd" />
-              </svg>
-            </div>
-          </div>
-        </div>
-
-        <textarea id="message" value={inputString} onChange={(e) => setInputString(e.target.value)} rows={16} className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" ></textarea>
-        <div onClick={handleClick} className={`${inputString.length >0 ? 'block' : 'hidden'} mt-3 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800`}>Calculate</div>
-      </div>
+      <InputString title="Input" inputString={inputString} setInputString={setInputString} rows={16} />
+      <div onClick={handleClick} className={`${inputString.length >0 ? 'block' : 'hidden'} my-3 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800`}>Calculate</div>
 
       {/* Results Displayed Here */}
       <div id="results" className={`hidden animate-fade-in`}>
-        <p className="font-bold underline">Results: <span onClick={() => {setInputString(''); document.getElementById("results")!.style.display = "none";}} >[clear]</span></p>
+        <div className="flex gap-2">
+            <div onClick={() => {setInputString(''); document.getElementById("results")!.style.display = "none";}} className="cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-red-500">
+                <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z" clipRule="evenodd" />
+              </svg>
+            </div>
+            <p className="font-bold underline">Results:</p>
+        </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 place-items-center text-center my-5">
           <div className='border w-32 h-32 p-4 flex flex-col shadow-lg bg-gray-50 place-items-center justify-center'>
