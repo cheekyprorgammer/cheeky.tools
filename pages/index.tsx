@@ -28,7 +28,7 @@ const Home: NextPage = () => {
       <div className="">
         <div className="flex">
           <h1 className="text-4xl font-bold underline">Welcome to&nbsp;
-          <span onClick={randomColours} className="cursor-pointer">
+          <span onClick={randomColours} className="cursor-pointer hover:animate-wiggle">
             <span id="c0">c</span>
             <span id="c1">h</span>
             <span id="c2">e</span>

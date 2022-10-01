@@ -20,8 +20,7 @@ export default function WordCount() {
           cliptext => 
           setInputString(cliptext),
           (err: any) => console.log(err),
-      )
-      
+      )  
   }
 
   function handleClick() {
@@ -70,7 +69,7 @@ export default function WordCount() {
 
     setLoading(false)
     results!.style.display = "block"
-    results!.style.height = "100%"
+    results!.style.opacity = "1"
 
     let syllables: any = syllableCount(inputString)
     setSyllables(syllables)
@@ -123,7 +122,7 @@ export default function WordCount() {
       </div>
 
       {/* Results Displayed Here */}
-      <div id="results" className={`py-5 hidden h-0 transition-all duration-200`}>
+      <div id="results" className={`hidden animate-fade-in`}>
         <p className="font-bold underline">Results:</p>
         <p>Words: {words}</p>
         <p>Characters (including spaces): {charsWithSpace}</p>
