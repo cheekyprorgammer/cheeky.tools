@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import Bot from '../images/bot'
-import Link from "next/link";
+import Flash from '../images/flash'
+import Link from "next/link"
 
 export default function Header() {
   
@@ -18,10 +19,11 @@ export default function Header() {
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <Link href="/">
                             <div className="cursor-pointer transform hover:scale-105 transition-all duration-500">
-                                <Bot className="h-10 w-10 md:h-20 md:w-20 mx-auto hover:animate-wiggle" />
+                                {/* <Bot className="h-10 w-10 md:h-20 md:w-20 mx-auto hover:animate-wiggle" /> */}
+                                <Flash className="h-10 w-10 md:h-20 md:w-20 mx-auto hover:animate-wiggle text-yellow-500" />
                             </div>
                         </Link>
-                        <p className="text-xl font-bold text-center drop-shadow"><Link href="/">cheeky.tools</Link></p>
+                        <p className="text-xl font-bold text-center drop-shadow"><Link href="/">Fast SEO Tools</Link></p>
                         <div className="md:hidden">
                             <button
                                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"

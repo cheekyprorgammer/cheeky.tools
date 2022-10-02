@@ -8,21 +8,21 @@ const Privacy: NextPage = () => {
   return (
     <div className="">
       <Head>
-        <title>Cheeky Tools Privacy Policy</title>
-        <meta name="description" content="At cheeky.tools, accessible from https://cheeky.tools, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by cheeky.tools and how we use it." />
+        <title>Fast SEO Tools Privacy Policy</title>
+        <meta name="description" content="At Fast SEO Tools, accessible from https://fastseo.tools, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Fast SEO Tools and how we use it." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
     <BackHome />
 
     <div className="flex flex-col gap-5">
-      <h1 className="text-3xl font-bold">Privacy Policy for cheeky.tools</h1>
+      <h1 className="text-3xl font-bold">Privacy Policy for Fast SEO Tools</h1>
 
-    <p>At cheeky.tools, accessible from https://cheeky.tools, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by cheeky.tools and how we use it.</p>
+    <p>At Fast SEO Tools, accessible from https://fastseo.tools, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Fast SEO Tools and how we use it.</p>
 
     <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
 
-    <p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in cheeky.tools. This policy is not applicable to any information collected offline or via channels other than this website. Our Privacy Policy was created with the help of the <a href="https://www.privacypolicygenerator.info/">Free Privacy Policy Generator</a>.</p>
+    <p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Fast SEO Tools. This policy is not applicable to any information collected offline or via channels other than this website. Our Privacy Policy was created with the help of the <a href="https://www.privacypolicygenerator.info/">Free Privacy Policy Generator</a>.</p>
 
     <h2 className="text-2xl font-medium">Consent</h2>
 
@@ -50,11 +50,11 @@ const Privacy: NextPage = () => {
 
     <h2 className="text-2xl font-medium">Log Files</h2>
 
-    <p>cheeky.tools follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services&apos; analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users&apos; movement on the website, and gathering demographic information.</p>
+    <p>Fast SEO Tools follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services&apos; analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users&apos; movement on the website, and gathering demographic information.</p>
 
     <h2 className="text-2xl font-medium">Cookies and Web Beacons</h2>
 
-    <p>Like any other website, cheeky.tools uses &apos;cookies&apos;. These cookies are used to store information including visitors&apos; preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users&apos; experience by customizing our web page content based on visitors&apos; browser type and/or other information.</p>
+    <p>Like any other website, Fast SEO Tools uses &apos;cookies&apos;. These cookies are used to store information including visitors&apos; preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users&apos; experience by customizing our web page content based on visitors&apos; browser type and/or other information.</p>
 
     <h2 className="text-2xl font-medium">Google DoubleClick DART Cookie</h2>
 
@@ -62,15 +62,15 @@ const Privacy: NextPage = () => {
 
     <h2 className="text-2xl font-medium">Advertising Partners Privacy Policies</h2>
 
-    <p>You may consult this list to find the Privacy Policy for each of the advertising partners of cheeky.tools.</p>
+    <p>You may consult this list to find the Privacy Policy for each of the advertising partners of Fast SEO Tools.</p>
 
-    <p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on cheeky.tools, which are sent directly to users&apos; browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.</p>
+    <p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on Fast SEO Tools, which are sent directly to users&apos; browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.</p>
 
-    <p>Note that cheeky.tools has no access to or control over these cookies that are used by third-party advertisers.</p>
+    <p>Note that Fast SEO Tools has no access to or control over these cookies that are used by third-party advertisers.</p>
 
     <h2 className="text-2xl font-medium">Third Party Privacy Policies</h2>
 
-    <p>cheeky.tools&apos;s Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. </p>
+    <p>Fast SEO Tools&apos;s Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. </p>
 
     <p>You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers&apos; respective websites.</p>
 
@@ -97,7 +97,7 @@ const Privacy: NextPage = () => {
 
     <p>Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
 
-    <p>cheeky.tools does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
+    <p>Fast SEO Tools does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
 
       </div>
       
