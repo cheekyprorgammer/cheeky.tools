@@ -4,66 +4,28 @@ import { useState, useEffect } from 'react'
 import InputString from '../../../InputString'
 import ToolDisclaimer from '../../../ToolDisclaimer'
 
-export default function WordCount() {
+export default function CaseChanger() {
   const [inputString, setInputString] = useState("")
-  const [words, setWords] = useState(0)
-  const [charsWithSpace, setCharsWithSpace] = useState(0)
-  const [spaces, setSpaces] = useState(0)
-  const [charsWithoutSpace, setCharsWithoutSpace] = useState(0)
-  const [syllables, setSyllables] = useState(0)
+  const [loading, setLoading] = useState(false)
+
+  function pasteText() {
+    let textArea: any = document.getElementById('message')
+
+    navigator.clipboard
+      .readText()
+      .then(
+          cliptext => 
+          setInputString(cliptext),
+          (err: any) => console.log(err),
+      )  
+  }
 
   function handleClick() {
 
-    function syllableCount(word: string) {
-      word = word.toLowerCase()
-      var t_some = 0
-      if(word.length>3)
-        {
-        if(word.substring(0,4)=="some")
-            {
-            word = word.replace("some","")
-            t_some++
-            }
-        }
-      word = word.replace(/(?:[^laeiouy]|ed|[^laeiouy]e)$/, '')   
-      word = word.replace(/^y/, '')                                
-      //return word.match(/[aeiouy]{1,2}/g).length  
-      var syl = word.match(/[aeiouy]{1,2}/g)
-      // console.log(syl)
-      if(syl)
-        {
-            //console.log(syl)
-            return syl.length+t_some
-        }
-    }
-
-    const results = document.getElementById("results")
-
-    let words = inputString.split(/\S+/).length - 1
-    setWords(words)
-    // console.log("There are " + (inputString.split(/\S+/).length - 1) + " words.")
-
-    let charsWithSpace = inputString.length
-    setCharsWithSpace(charsWithSpace)
-    // console.log("There are " + inputString.length + " characters (with spaces).")
-
-    let spaces = inputString.split(" ").length - 1
-    setSpaces(spaces)
-    // console.log((inputString.split(" ").length -1) + " space(s)")
-
-    let charsWithoutSpace = charsWithSpace - spaces
-    setCharsWithoutSpace(charsWithoutSpace)
-
-    let syllables: any = syllableCount(inputString)
-    setSyllables(syllables)
-
-    results!.style.display = "block"
-    results!.style.opacity = "1"
-
-    results!.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"})
   }
 
   useEffect(() => {
+    
   }, [])
 
   return <>
