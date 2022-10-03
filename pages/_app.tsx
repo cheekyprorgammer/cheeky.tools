@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   
   <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mx-auto lg:max-w-7xl p-4">
     <div className="md:col-span-3"><Component {...pageProps} /></div>
-    <div className="md:col-span-2"><Sidebar /></div>
+    <div className="md:col-span-2 mt-5 md:mt-0"><Sidebar /></div>
   </div>
 
   <Footer />

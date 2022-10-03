@@ -31,7 +31,7 @@ const Home: NextPage = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold underline italic">Welcome to<br /><span className="italic text-yellow-500 underline">Fast SEO Tools</span>
           </h1>
         </div>
-        <p className="text-xl mb-3 italic">Fast and Handy SEO Tools.</p>
+        <p className="text-xl mb-3 italic">Fast and Handy SEO Tools</p>
         <p className="mb-3">Built using enterprise level Javascript framework NEXT.js and deployed on the cutting edge Vercel content delivery network. Always online. Always ready.</p>
         
         <div className="mb-3 flex items-center gap-5 md:gap-0 justify-evenly">

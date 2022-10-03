@@ -21,7 +21,7 @@ export default function Header() {
                                 <Flash className="h-10 w-10 md:h-20 md:w-20 mx-auto hover:animate-wiggle text-yellow-500 opacity-100" />
                             </div>
                         </Link>
-                        <p className="text-xl font-bold text-center drop-shadow"><Link href="/">Fast SEO Tools</Link></p>
+                        <p className="text-xl font-bold text-center"><Link href="/">Fast SEO Tools</Link></p>
                         <div className="md:hidden">
                             <button
                                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -67,20 +67,21 @@ export default function Header() {
                         }`}
                     >
                         <div className="flex flex-col md:flex-row gap-5 items-center uppercase">
-                            {/* <div className="text-lg font-bold md:hidden">Cheeky Tools</div> */}
                             
                             <div className="text-gray-600 hover:text-blue-600 text-xl hover:font-bold cursor-pointer">
                                 <Link href="/">Home</Link>
-                            </div>
-                            
-{/* 
-                            <div className="text-gray-600 hover:text-blue-600 text-xl hover:font-bold cursor-pointer">
+                            </div>                         
+
+{/*                         <div className="text-gray-600 hover:text-blue-600 text-xl hover:font-bold cursor-pointer">
                                 Tools
                             </div> */}
 
                             <div className="text-gray-600 hover:text-blue-600 text-xl hover:font-bold cursor-pointer">
                                 <Link href="/contact">Contact</Link>
                             </div>
+
+                            <div className={`cursor-pointer w-10/12 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 drop-shadow-lg hover:drop-shadow-md`}>Subscribe</div>                            
+                            
                         </div>
                     </div>
                 </div>
