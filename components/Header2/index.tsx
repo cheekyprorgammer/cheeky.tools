@@ -11,15 +11,14 @@ export default function Header() {
   }, [])
 
     return (
-        <nav id="head" className="sticky top-0 w-full md:h-36 bg-gray-50 opacity-95 shadow z-[100]">
+        <nav id="head" className="sticky top-0 w-full md:h-36 bg-gray-50/95 shadow z-[100]">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
-                    
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <Link href="/">
                             <div className="cursor-pointer transform hover:scale-105 transition-all duration-500">
                                 {/* <Bot className="h-10 w-10 md:h-20 md:w-20 mx-auto hover:animate-wiggle" /> */}
-                                <Flash className="h-10 w-10 md:h-20 md:w-20 mx-auto hover:animate-wiggle text-yellow-500" />
+                                <Flash className="h-10 w-10 md:h-20 md:w-20 mx-auto hover:animate-wiggle text-yellow-500 opacity-100" />
                             </div>
                         </Link>
                         <p className="text-xl font-bold text-center drop-shadow"><Link href="/">Fast SEO Tools</Link></p>

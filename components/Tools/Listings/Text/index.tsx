@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Hash from "../../../images/hash"
 import WordCount from "../../../images/wordcount"
+import TextCase from "../../../images/textcase"
 
 export default function TextTools() {
     return (
@@ -52,6 +53,15 @@ export default function TextTools() {
               <WordCount />
             </div>
             <p className="text-sm font-medium  drop-shadow-md shadow-blue-600/50 text-center">Word<br />Counter</p>
+          </div>
+        </Link>
+
+        <Link href="/tools/text/casechanger">
+          <div className="flex flex-col place-items-center w-36 p-2 hover:text-blue-500 hover:scale-105 transition-all duration-500 cursor-pointer">
+            <div className="p-1 mb-2 underline w-20 border rounded shadow">
+              <TextCase />
+            </div>
+            <p className="text-sm font-medium  drop-shadow-md shadow-blue-600/50 text-center">Case<br />Changer</p>
           </div>
         </Link>
 
