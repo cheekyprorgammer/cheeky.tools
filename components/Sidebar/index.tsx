@@ -8,7 +8,7 @@ export default function Sidebar() {
         <li className="hover:font-bold hover:text-blue-800 text-blue-500"><Link href="/tools/text/md5" className="cursor-pointer">MD5 Hash Generator</Link></li>
         <li className="hover:font-bold hover:text-blue-800 text-blue-500"><Link href="/tools/text/sha1" className="cursor-pointer">SHA-1 Hash Generator</Link></li>
         <li className="hover:font-bold hover:text-blue-800 text-blue-500"><Link href="/tools/text/sha512" className="cursor-pointer">SHA-512 Hash Generator</Link></li>
-        <li className="hover:font-bold hover:text-blue-800 text-blue-500"><Link href="/tools/text/wordcounter" className="cursor-pointer">Word Counter</Link></li>
+        <li className="hover:font-bold hover:text-blue-800 text-blue-500"><Link href="/tools/text/wordcount" className="cursor-pointer">Word Counter</Link></li>
         <li className="hover:font-bold hover:text-blue-800 text-blue-500"><Link href="/tools/text/sha256" className="cursor-pointer">SHA-256 Hash Generator</Link></li>
       </ul>
     </div>

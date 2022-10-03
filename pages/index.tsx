@@ -8,13 +8,13 @@ import TextTools from '../components/Tools/Listings/Text'
 const Home: NextPage = () => {
   const colours = []
 
-  function randomColours() {
-    for (let index = 0; index < 6; index++) {
-      var randomColour = Math.floor(Math.random()*16777215).toString(16);
-      colours[index] = randomColour
-      document.getElementById("c" + index)!.style.color = "#" + randomColour
-    }
-  }
+  // function randomColours() {
+  //   for (let index = 0; index < 6; index++) {
+  //     var randomColour = Math.floor(Math.random()*16777215).toString(16);
+  //     colours[index] = randomColour
+  //     document.getElementById("c" + index)!.style.color = "#" + randomColour
+  //   }
+  // }
 
   useEffect(() => {
     // randomColours()
