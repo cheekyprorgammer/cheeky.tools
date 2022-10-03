@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-import Bot from '../images/bot'
 import Flash from '../images/flash'
 import Link from "next/link"
 
@@ -12,7 +11,7 @@ export default function Header() {
   }, [])
 
     return (
-        <nav id="head" className="sticky top-0 w-full md:h-36 bg-gray-50 shadow z-[100]">
+        <nav id="head" className="sticky top-0 w-full md:h-36 bg-gray-50 opacity-95 shadow z-[100]">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     
@@ -68,19 +67,21 @@ export default function Header() {
                             navbar ? "block" : "hidden"
                         }`}
                     >
-                    <div className="text-lg font-bold md:hidden">Cheeky Tools</div>
-                        <Link href="/">
-                            <div className="text-gray-600 hover:text-blue-600 hover:font-bold cursor-pointer">
-                            Home
+                        <div className="flex flex-col md:flex-row gap-5 items-center uppercase">
+                            {/* <div className="text-lg font-bold md:hidden">Cheeky Tools</div> */}
+                            
+                            <div className="text-gray-600 hover:text-blue-600 text-xl hover:font-bold cursor-pointer">
+                                <Link href="/">Home</Link>
                             </div>
-                        </Link>
+                            
+{/* 
+                            <div className="text-gray-600 hover:text-blue-600 text-xl hover:font-bold cursor-pointer">
+                                Tools
+                            </div> */}
 
-                        <div className="text-gray-600 hover:text-blue-600 hover:font-bold cursor-pointer">
-                            Tools
-                        </div>
-
-                        <div className="text-gray-600 hover:text-blue-600 hover:font-bold cursor-pointer">
-                            Contact
+                            <div className="text-gray-600 hover:text-blue-600 text-xl hover:font-bold cursor-pointer">
+                                <Link href="/contact">Contact</Link>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,5 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Link from 'next/link'
-import Image from 'next/image'
 import BackHome from '../components/BackHome'
 
 const Privacy: NextPage = () => {
@@ -15,10 +13,10 @@ const Privacy: NextPage = () => {
 
     <BackHome />
 
-    <div className="flex flex-col gap-5">
-      <h1 className="text-3xl font-bold">Privacy Policy for Fast SEO Tools</h1>
+  <div className="flex flex-col gap-5">
+    <h1 className="text-3xl font-bold">Privacy Policy for Fast SEO Tools</h1>
 
-    <p>At Fast SEO Tools, accessible from https://fastseo.tools, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Fast SEO Tools and how we use it.</p>
+    <p>At Fast SEO Tools, accessible from https://www.fastseo.tools, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Fast SEO Tools and how we use it.</p>
 
     <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
 
@@ -39,13 +37,13 @@ const Privacy: NextPage = () => {
     <p>We use the information we collect in various ways, including to:</p>
 
     <ul>
-    <li>Provide, operate, and maintain our website</li>
-    <li>Improve, personalize, and expand our website</li>
-    <li>Understand and analyze how you use our website</li>
-    <li>Develop new products, services, features, and functionality</li>
-    <li>Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website, and for marketing and promotional purposes</li>
-    <li>Send you emails</li>
-    <li>Find and prevent fraud</li>
+      <li>Provide, operate, and maintain our website</li>
+      <li>Improve, personalize, and expand our website</li>
+      <li>Understand and analyze how you use our website</li>
+      <li>Develop new products, services, features, and functionality</li>
+      <li>Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website, and for marketing and promotional purposes</li>
+      <li>Send you emails</li>
+      <li>Find and prevent fraud</li>
     </ul>
 
     <h2 className="text-2xl font-medium">Log Files</h2>
@@ -99,7 +97,7 @@ const Privacy: NextPage = () => {
 
     <p>Fast SEO Tools does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
 
-      </div>
+  </div>
       
 
     </div>
